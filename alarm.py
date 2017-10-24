@@ -10,6 +10,14 @@ class AlarmReaction(appapi.AppDaemon):
         #self.listen_state(self.alarmSounds, self.args['alarm_sounds'])
         self.listen_event(self.alarmListener, 'state_changed', entity_id = 'alarm_control_panel.house')
         self.telegram = self.get_app("Telegram")
+        self.broadcastStartup("RSData Smart Alarm Online")
+
+    def broadcastStartup (self, message):
+        adminUsers = self.config['Telegram']["groups"]['admin']['chatids']
+        for user in adminUsers:
+            self.call_service("telegram_bot/send_message",
+                target = user,
+                message = message)
 
     def alarmListener(self, event_name, data, kwargs):
         self.log("<<...")

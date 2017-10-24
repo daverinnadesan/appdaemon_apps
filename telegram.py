@@ -4,6 +4,7 @@ import enum
 import json
 import random
 import datetime
+import subprocess
 
 #thumbs = [	U+1F44D U+1F3FF	,U+1F44D U+1F3FE, U+1F44D U+1F3FD	, 	U+1F44D U+1F3FC, U+1F44D U+1F3FB, U+1F44D	]
 thumbs = ["{}{}".format(u'\U0001f44d',u'\U0001f3ff'),"{}{}".format(u'\U0001f44d',u'\U0001f3fe'), "{}{}".format(u'\U0001f44d',u'\U0001f3fd'), "{}{}".format(u'\U0001f44d',u'\U0001f3fc'), "{}{}".format(u'\U0001f44d',u'\U0001f3fc'), "{}".format(u'\U0001f44d')]
@@ -128,7 +129,14 @@ class TelegramBotEventListener(appapi.AppDaemon):
 		self.handleIncomingCode = None
 		self.running_state_listeners = set()
 		self.delay = 1
+		self.broadcastStartup("Iris Online")
 
+	def broadcastStartup (self, message):
+		adminUsers = self.args["groups"]['admin']['chatids']
+		for user in adminUsers:
+			self.call_service("telegram_bot/send_message",
+				target = user,
+				message = message)
 	def getAccessGroup(self,userID, groupItems):
 		accessgroup = None
 		for group in groupItems:
