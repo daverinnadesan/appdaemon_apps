@@ -1,0 +1,192 @@
+activities:
+- categories:
+  - personal: 2
+  - mindfulness: 2
+  - spiritual
+  frequencyFactor: 0.5
+  name: Meditate
+  score: -1.40942
+  type: personal
+- categories:
+  - personal: 2
+  - fun: 3
+  frequencyFactor: 2
+  name: Social
+  score: -1.97036
+- categories:
+  - self development: 3
+  - fun: 0.5
+  - strength
+  frequencyFactor: 1.4
+  name: Gym
+  score: -0.16068
+- categories:
+  - business
+  - planning
+  - strategizing
+  frequencyFactor: 1
+  name: Trello
+  score: -0.7269
+- categories:
+  - personal
+  - self development: 2
+  frequencyFactor: 1
+  name: Voice Note
+  score: -2.85721
+- categories:
+  - self development: 3
+  - memory: 2
+  frequencyFactor: 7
+  name: Ever-Voice
+  score: 0.95948
+- categories:
+  - inspirational
+  - fun
+  - self development
+  - relax
+  - lazy: 0.5
+  frequencyFactor: 1
+  name: Fiction
+  score: -2.89288
+- categories:
+  - business
+  - self development
+  frequencyFactor: 1
+  name: Non-Fiction
+  score: -1.8057
+- categories:
+  - inspirational: 2
+  - fun
+  - relax
+  - lazy
+  frequencyFactor: 3
+  name: New Music
+  score: -3.03837
+- categories:
+  - ALL
+  frequencyFactor: 3
+  name: Surfing
+  score: -3.04254
+- categories:
+  - business: 2
+  frequencyFactor: 3
+  name: Bus Research
+  score: -6.10504
+- categories:
+  - knowledge: 2
+  - inspiration
+  - self development
+  frequencyFactor: 2
+  name: New Ted
+  score: -1.95504
+- categories:
+  - memory
+  - lazy
+  frequencyFactor: 2
+  name: Rewatch Ted
+  score: -1.9817
+- categories:
+  - personal: 2
+  - spiritual: 2
+  - relax
+  frequencyFactor: 1
+  name: Sunrise
+  score: -2.86709
+- categories:
+  - personal
+  - thinking
+  - strategizing
+  frequencyFactor: 3
+  name: Vines
+  score: -3.02504
+- categories:
+  - Godliness: 10
+  - personal: 2
+  - business: 2
+  - planning: 2
+  - thinking: 2
+  - strategizing: 2
+  - inspiration: 2
+  frequencyFactor: 1
+  name: Master Dav
+  score: 2.48633
+- categories:
+  - self development
+  - personal
+  frequencyFactor: 2
+  name: Kanye Lyrics
+  score: -6.10504
+- categories:
+  - personal
+  - relax
+  frequencyFactor: 2
+  name: Self Chill
+  score: -1.89215
+- categories:
+  - personal: 2
+  - fun: 2
+  frequencyFactor: 1
+  name: Dancing
+  score: -2.85028
+- categories:
+  - personal
+  - memory
+  - self development
+  frequencyFactor: 0.5
+  name: Wall Notes
+  score: -1.43494
+- categories:
+  - personal
+  - business
+  - programming
+  - self development
+  - mindfulness
+  - time management
+  frequencyFactor: 3
+  name: Athena
+  score: 9.17799
+- categories:
+  - programming
+  - business
+  frequencyFactor: 2
+  name: Dashboard
+  score: -1.44206
+- categories:
+  - business
+  - entrepreneuring
+  frequencyFactor: 3
+  name: Logo
+  score: 6.79442
+- categories:
+  - programming
+  - business
+  - internet
+  frequencyFactor: 3
+  name: Website
+  score: -5.61103
+- categories:
+  - personal
+  - business
+  - internet
+  - relax
+  frequencyFactor: 2
+  name: Youtube Surfing
+  score: 0.64446
+- categories:
+  - strength: 2
+  - self defence
+  frequencyFactor: 7
+  name: Fighting
+  score: -4.9312
+- categories:
+  - knowledge
+  - lazy
+  - relax
+  frequencyFactor: 2
+  name: Movie
+  score: -0.76533
+- categories:
+  - business
+  frequencyFactor: 5
+  name: Company Vision
+  score: 0

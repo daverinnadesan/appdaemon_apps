@@ -64,12 +64,12 @@ class AlarmReaction(appapi.AppDaemon):
         self.log("{} user(s) successfully notified".format(count))
 
     def getMessage(self,new_state,triggered_by_name):
-        messages = {"armed_home":"Alarm *ARMED (Stay)* by {}".format(triggered_by_name),
-                    "armed_away":"Alarm *ARMED (Away)* by {}".format(triggered_by_name) ,
-                    "pending":"Alarm *PENDING ARM* by {}".format(triggered_by_name),
-                    "warning":"{0} *Warning* by {1}".format(u'\U000026a0',triggered_by_name),
-                    "disarmed":"Alarm *DISARMED* by {}".format(triggered_by_name),
-                    "triggered":"{0} Alarm *TRIGGERED* by {1}".format(u'\U000026d4',triggered_by_name)}
+        messages = {"armed_home":"Alarm <code>ARMED (Stay)</code> by {}".format(triggered_by_name),
+                    "armed_away":"Alarm <code>ARMED (Away)</code> by {}".format(triggered_by_name) ,
+                    "pending":"Alarm <code>PENDING ARM</code> by {}".format(triggered_by_name),
+                    "warning":"{0} <code>Warning</code> by {1}".format(u'\U000026a0',triggered_by_name),
+                    "disarmed":"Alarm <code>DISARMED</code> by {}".format(triggered_by_name),
+                    "triggered":"{0} Alarm <code>TRIGGERED</code> by {1}".format(u'\U000026d4',triggered_by_name)}
         return messages.get(new_state)
 
     def alarmLights(self, entity, attribute, old, new, kwargs):
